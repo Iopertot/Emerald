@@ -1,0 +1,64 @@
+body {
+  background-color: #1B1B1D;
+}
+
+.emerald {
+  color: #5ECDF9;
+  font-family: nerdmono;
+  text-align: center;
+}
+
+#emeraldtext {
+  text-shadow: -1.2px -1.2px 0 #000, 1.2px -1.2px 0 #000, -1.2px 1.2px 0 #000, 1.2px 1.2px 0 #000;
+  text-align: center;
+}
+
+.buttonFunctions {
+  #playBtn {
+    color: #5ECDF9;
+    text-shadow: -1.2px -1.2px 0 #000, 1.2px 1.2px 0 #000, -1.2px 1.2px 0 #000, 1.2px 1.2px 0 #000;
+  }
+}
+
+#playBtn {
+  background-color: #5ECDF9;
+  border: none;
+  color: #1B1B1D;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+#pauseBtn {
+  background-color: #5ECDF9;
+  border: none;
+  color: #1B1B1D;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+#chooseBtn {
+  background-color: #5ECDF9;
+  border: none;
+  color: #1B1B1D;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+#stopBtn {
+  background-color: #5ECDF9;
+  border: none;
+  color: #1B1B1D;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+
+
