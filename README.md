@@ -5,7 +5,7 @@ Made using electron.js and html5 audio
 
 Runs m4a files and remembers audio states
 
-**disclaimer**
+#**disclaimer**
 
 If you decide to build this and get errors
 Then its not my problem and dont contact me about it
