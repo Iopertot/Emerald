@@ -5,12 +5,14 @@ Made using electron.js and html5 audio
 
 Runs m4a files and remembers audio states
 
-# **disclaimer**
+# **Disclaimer**
 
-If you decide to build this and get errors \
-Then its not my problem and dont contact me about it \
-This was made for personal purposes and i uploaded it here \
-for easier updating 
+This isnt gods gift to audiobooks \
+its made to serve one purpose\
+and it does that so dont fucking complain to me \
+About it being plain \
+it only plays m4a and im not adding other formats\
+So get tf out my dms bout this shit
 
 
 
