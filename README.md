@@ -9,10 +9,10 @@ Runs m4a files and remembers audio states
 
 This isnt gods gift to audiobooks \
 its made to serve one purpose\
-and it does that so dont fucking complain to me \
-About it being plain \
-it only plays m4a and im not adding other formats\
-So get tf out my dms bout this shit
+yes its also very plain and i do not intend\
+to make it fancier for now\
+this is my first project using electron so be patient\
+it only plays m4a for now but I plan on adding more 
 
 
 
