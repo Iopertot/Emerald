@@ -1,3 +1,4 @@
+
 body {
   background-color: #1B1B1D;
 }
@@ -13,52 +14,109 @@ body {
   text-align: center;
 }
 
-.buttonFunctions {
-  #playBtn {
-    color: #5ECDF9;
-    text-shadow: -1.2px -1.2px 0 #000, 1.2px 1.2px 0 #000, -1.2px 1.2px 0 #000, 1.2px 1.2px 0 #000;
-  }
+input[type="range"] {
+  width: 80%;
+  margin: 10px;
 }
 
-#playBtn {
-  background-color: #5ECDF9;
-  border: none;
-  color: #1B1B1D;
-  padding: 15px 32px;
+#progress {
+  margin-top: 5px;
   text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-#pauseBtn {
-  background-color: #5ECDF9;
-  border: none;
-  color: #1B1B1D;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-#chooseBtn {
-  background-color: #5ECDF9;
-  border: none;
-  color: #1B1B1D;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
+  color: #5ECDF9;
+  font-family: nerdmono;
 }
 
 #stopBtn {
   background-color: #5ECDF9;
   border: none;
-  color: #1B1B1D;
+  color: black;
   padding: 15px 32px;
   text-align: center;
+  font-family: nerdmono;
   text-decoration: none;
-  font-size: 16px;
+}
+#pauseBtn {
+  background-color: #5ECDF9;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  font-family: nerdmono;
+  text-decoration: none;
+}
+#chooseBtn {
+  background-color: #5ECDF9;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  font-family: nerdmono;
+  text-decoration: none;
+}
+#playBtn {
+  background-color: #5ECDF9;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  font-family: nerdmono;
+  text-decoration: none;
 }
 
+.toggle-sidebar-btn {
+  background: none;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  position: fixed;
+  top: 30px; 
+  right: 3px; 
+  z-index: 1000;
+}
 
+.toggle-sidebar-btn img {
+  width: 32px;
+  height: 32px;
+}
 
+.draggable-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 31px;
+  background-color: #1B1B1D;
+  -webkit-app-region: drag;
+  z-index: 9999;
+}
+
+.drag-region {
+  position: absolute;
+  top: 27px;
+  left: 0;
+  width: 100%;
+  height: 25px; 
+  -webkit-app-region: drag;
+  z-index: 9999;
+}
+
+.sidebar-container {
+  position: absolute;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  height: 100%;
+  background-color: #252526;
+  transition: left 0.3s ease-in-out; 
+  z-index: 9998;
+}
+
+.sidebar {
+  padding: 20px;
+  color: white;
+}
+
+#lastPlayedList {
+  color: #5ECDF9;
+  font-family: nerdmono;
+}

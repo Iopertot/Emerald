@@ -10,7 +10,7 @@ app.on('web-contents-created', (event, contents) => {
     callback({
       responseHeaders: {
         ...details.responseHeaders,
-        'Content-Security-Policy': ["default-src 'self'; script-src 'self'"],
+        'Content-Security-Policy': "default-src 'self'; script-src 'self' 'unsafe-inline'",
       },
     });
   });
@@ -18,7 +18,7 @@ app.on('web-contents-created', (event, contents) => {
 
 function createWindow() {
   mainWindow = new BrowserWindow({
-    titleBarStyle: 'hiddenInline',
+    titleBarStyle: 'hidden',
     titleBarOverlay: true,
     width: 1000,
     height: 600,
@@ -30,6 +30,8 @@ function createWindow() {
       preload: path.join(__dirname, 'preload.js')
     },
   });
+
+  console.log('preload path joined')
 
   mainWindow.loadURL(
     url.format({
@@ -43,7 +45,6 @@ function createWindow() {
     mainWindow = null;
   });
 }
-
 
 app.on('ready', createWindow);
 
@@ -62,7 +63,13 @@ app.on('activate', function() {
 ipcMain.handle('open-file-dialog', async (event) => {
   const result = await dialog.showOpenDialog({
     properties: ['openFile'],
-    filters: [{ name: 'Audiobooks', extensions: ['m4a'] }]
+    filters: [{ name: 'Audiobooks', extensions: ['mp3', 'm4a'] }]
   });
-  return result;
+
+  if (!result.canceled && result.filePaths.length > 0) {
+    const audiobookPath = result.filePaths[0];
+    return audiobookPath;
+  }
+
+  return null;
 });

@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Emerald</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-eval'">
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="fonts.css" />
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
@@ -15,12 +16,33 @@
     <nl></nl>
     <p id="audiobookUrl" class="emerald"">No audiobook selected</p>
     <p id="progress"></p>
+
     <div class="buttons" align="center">
     <button id="chooseBtn">Choose Audiobook</button>
     <button id="playBtn">Play</button>
     <button id="pauseBtn">Pause</button>
     <button id="stopBtn">Stop</button>
+    </div>
+
+  <button id="toggleSidebarBtn" class="toggle-sidebar-btn">
+    <img src="./images/stelle sidebar icon.png" alt="Sidebar Toggle Icon">
+  </button>
+
+  <div id="sidebarContainer" class="sidebar-container">
+    <div class="sidebar">
+      <ul id="lastPlayedList" class="last-played-list"></ul>
+      <button id="clearBtn">Clear Last Played List</button>
+    </div>
   </div>
+
+<div align="center">
+  <input type="range" id="seekBar" min="0" value="0">
+</div>
+
+<div class="draggable-bar"></div>
+<div id="dragRegion" class="drag-region"></div>
+
+<div id="progress" align="center">0:00 / 0:00</div>
     <script src="renderer.js"></script>
   </body>
 </html>

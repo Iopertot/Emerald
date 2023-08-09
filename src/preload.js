@@ -1,9 +1,15 @@
-const { contextBridge, ipcRenderer } = require('electron');
+const { contextBridge, ipcRenderer, openFileDialog } = require('electron');
 
 contextBridge.exposeInMainWorld('electron', {
-  require: require,
+  ipcRenderer: ipcRenderer,
   openFileDialog: async () => {
-    const { filePaths } = await ipcRenderer.invoke('open-file-dialog');
-    return filePaths && filePaths.length > 0 ? filePaths[0] : null;
+    try {
+      const audiobookPath = await ipcRenderer.invoke('open-file-dialog');
+      console.log('Received audiobookPath:', audiobookPath);
+      return audiobookPath;
+    } catch (error) {
+      console.error('Error opening file dialog:', error);
+      return null;
+    }
   }
 });

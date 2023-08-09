@@ -2,7 +2,7 @@
   "name": "emerlad",
   "productName": "emerlad",
   "version": "1.0.0",
-  "description": "My Electron application description",
+  "description": "Gay ass audiobook app",
   "main": "src/index.js",
   "scripts": {
     "start": "electron-forge start",
@@ -18,10 +18,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "electron-squirrel-startup": "^1.0.0",
-    "electron-store": "^8.1.0",
-    "howler": "^2.2.3",
-    "play-sound": "^1.1.5"
+    "electron-squirrel-startup": "^1.0.0"
   },
   "devDependencies": {
     "@electron-forge/cli": "^6.2.1",
