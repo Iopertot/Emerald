@@ -15,7 +15,7 @@ this is my first project using electron so be patient\
 it only plays m4a for now but I plan on adding more 
 
 # Todo
-- add mp3 format |Finished 
+- add mp3 format | Finished 
 - fix bugs | Half Finished
 - make it look pretty | Not Finished
 
