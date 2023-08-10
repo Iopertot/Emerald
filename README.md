@@ -7,6 +7,8 @@ Made using electron.js and html5 audio
 
 Runs m4a and mp3 files and remembers audio states
 
+if you want to help develop dm me on discord
+
 # **Disclaimer**
 
 This isnt gods gift to audiobooks \
