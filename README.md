@@ -1,9 +1,10 @@
 # Emerald
-Personal Audio book app
+Audio book app \
+its not good so dont expect much
 
 Made using electron.js and html5 audio
 
-Runs m4a files and remembers audio states
+Runs m4a and mp3 files and remembers audio states
 
 # **Disclaimer**
 
@@ -12,7 +13,7 @@ its made to serve one purpose\
 yes its also very plain and i do not intend\
 to make it fancier for now\
 this is my first project using electron so be patient\
-it only plays m4a for now but I plan on adding more 
+plays mp3 and m4a not m4b
 
 # Todo
 - add mp3 format | Finished 
